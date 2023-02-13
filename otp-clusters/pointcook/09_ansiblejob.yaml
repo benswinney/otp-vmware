@@ -12,7 +12,7 @@ metadata:
     cluster: Cluster
     cluster-name: pointcook
 spec:
-  tower_auth_secret: ac-tower-admin-password
+  tower_auth_secret: ansible-tower-credentials
   job_template_name: AJ - Create vSphere Infrastructure
   extra_vars:
     vcenter_credentials_secret_namespace: ztp-credentials
