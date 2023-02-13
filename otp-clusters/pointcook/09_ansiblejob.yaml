@@ -2,7 +2,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleJob
 metadata:
-  name: pointcook-{{ cluster_name }}-vsphere-bootstrap
+  name: pointcook-vsphere-bootstrap
   namespace: pointcook
   labels:
     name: pointcook
