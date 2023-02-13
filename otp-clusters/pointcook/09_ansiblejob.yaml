@@ -15,7 +15,7 @@ spec:
   tower_auth_secret: ansible-tower-credentials
   job_template_name: AJ - Create vSphere Infrastructure
   extra_vars:
-    vcenter_credentials_secret_namespace: ztp-credentials
+    vcenter_credentials_secret_namespace: pointcook
     vcenter_credentials_secret_name: swinney-vcenter
 
     infraenv_namespace: pointcook
