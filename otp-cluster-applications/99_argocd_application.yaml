@@ -61,5 +61,5 @@ spec:
     ## Enable recursive sub-directory search to enable management of multiple cluster from this single Application
     directory:
       recurse: true
-  project: pointcook-cluster
+  project: otp-cluster-application
   syncPolicy: {}
