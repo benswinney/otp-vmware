@@ -1,0 +1,27 @@
+---
+kind: ConfigMap 
+apiVersion: v1 
+metadata:
+  name: pointcook-cluster-config
+  namespace: pointcook
+  labels:
+    name: pointcook
+    cloud: vSphere
+    vendor: OpenShift
+    datacenter: Datacenter
+    cluster: Cluster
+    cluster-name: pointcook
+data:
+  cluster_name: pointcook
+  cluster_provider: vsphere
+  cluster_type: vSphere
+
+  node_boot_timeout: '30'
+  node_count: '1'
+
+  vsphere_datacenter: Datacenter 
+  vsphere_cluster: Cluster 
+  vsphere_datastore: vm-storage
+  vsphere_network: VM Network
+
+  cluster_nodes: '1'

@@ -1,0 +1,36 @@
+---
+apiVersion: agent.open-cluster-management.io/v1
+kind: KlusterletAddonConfig
+metadata:
+  name: pointcook
+  namespace: pointcook
+  labels:
+    name: pointcook
+    cloud: vSphere
+    vendor: OpenShift
+    datacenter: Datacenter
+    cluster: Cluster
+    cluster-name: pointcook
+spec:
+  clusterName: pointcook
+  clusterNamespace: pointcook
+  clusterLabels:
+    name: pointcook
+    cloud: vSphere
+    vendor: OpenShift
+    datacenter: Datacenter
+    cluster: Cluster
+    cluster-name: pointcook
+    #cluster.open-cluster-management.io/clusterset: default
+  applicationManager:
+    enabled: true
+  policyController:
+    enabled: true
+  searchCollector:
+    enabled: true
+  certPolicyController:
+    enabled: true
+  iamPolicyController:
+    enabled: true
+  #workManager:
+  #  enabled: true

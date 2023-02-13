@@ -1,0 +1,25 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: pointcook-{{ cluster_name }}-vsphere-bootstrap
+  namespace: pointcook
+  labels:
+    name: pointcook
+    cloud: vSphere
+    vendor: OpenShift
+    datacenter: Datacenter
+    cluster: Cluster
+    cluster-name: pointcook
+spec:
+  tower_auth_secret: ac-tower-admin-password
+  job_template_name: AJ - Create vSphere Infrastructure
+  extra_vars:
+    vcenter_credentials_secret_namespace: ztp-credentials
+    vcenter_credentials_secret_name: vmware-credentials
+
+    infraenv_namespace: pointcook
+    infraenv_name: pointcook
+
+    cluster_configmap_namespace: pointcook
+    cluster_configmap_name: pointcook-cluster-config
