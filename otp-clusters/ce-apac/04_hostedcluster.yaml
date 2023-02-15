@@ -1,16 +1,16 @@
 apiVersion: hypershift.openshift.io/v1alpha1
 kind: HostedCluster
 metadata:
-  name: 'ce-apac-sno'
-  namespace: 'ce-apac-sno'
+  name: 'ce-apac'
+  namespace: 'ce-apac'
   labels:
 spec:
   release:
     image: quay.io/openshift-release-dev/ocp-release:4.12.2-multi
   pullSecret:
-    name: pullsecret-cluster-ce-apac-sno
+    name: pullsecret-cluster-ce-apac
   sshKey:
-    name: sshkey-cluster-ce-apac-sno
+    name: sshkey-cluster-ce-apac
   networking:
     podCIDR: 10.132.0.0/14
     serviceCIDR: 172.31.0.0/16
@@ -20,7 +20,7 @@ spec:
     type: Agent
     agent:
       agentNamespace: 'itzdev-na'
-  infraID: 'ce-apac-sno'
+  infraID: 'itzdev-na'
   dns:
     baseDomain: 'na.cloud.techzone.ibm.com'
   services:
