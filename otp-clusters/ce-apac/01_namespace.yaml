@@ -1,0 +1,12 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: itzdev-na
+  labels:
+    name: itzdev-na
+    cloud: vSphere
+    vendor: OpenShift
+    datacenter: IBMCloud
+    cluster: itzdev-wdc07
+    cluster-name: ce-apac
+    

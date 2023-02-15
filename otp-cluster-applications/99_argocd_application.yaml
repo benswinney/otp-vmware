@@ -1,8 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  creationTimestamp: null
-  name: pointcook-cluster
+  name: All-Clusters
   namespace: openshift-gitops
 spec:
   ignoreDifferences:
@@ -56,8 +55,7 @@ spec:
     repoURL: 'https://github.com/benswinney/otp-vmware.git'
     targetRevision: HEAD
     ## Path is the repo directory that containers the cluster(s) configuration and deployment manifests
-    path: otp-clusters/pointcook
-    #path: ztp-clusters/${INFRA}/${DEPLOYMENT_TYPE}/${CLUSTER_NAME}
+    path: otp-clusters
     ## Enable recursive sub-directory search to enable management of multiple cluster from this single Application
     directory:
       recurse: true

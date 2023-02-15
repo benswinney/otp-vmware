@@ -1,0 +1,12 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: ce-apac
+  labels:
+    name: ce-apac
+    cloud: vSphere
+    vendor: OpenShift
+    datacenter: IBMCloud
+    cluster: itzdev-wdc07
+    cluster-name: ce-apac
+    

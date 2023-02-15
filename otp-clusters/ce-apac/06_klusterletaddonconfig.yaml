@@ -2,26 +2,25 @@
 apiVersion: agent.open-cluster-management.io/v1
 kind: KlusterletAddonConfig
 metadata:
-  name: pointcook
-  namespace: pointcook
+  name: ce-apac
+  namespace: ce-apac
   labels:
-    name: pointcook
+    name: ce-apac
     cloud: vSphere
     vendor: OpenShift
-    datacenter: Datacenter
-    cluster: Cluster
-    cluster-name: pointcook
+    datacenter: IBMCloud
+    cluster: itzdev-wdc07
+    cluster-name: ce-apac
 spec:
-  clusterName: pointcook
-  clusterNamespace: pointcook
+  clusterName: ce-apac
+  clusterNamespace: ce-apac
   clusterLabels:
-    name: pointcook
+    name: ce-apac
     cloud: vSphere
     vendor: OpenShift
-    datacenter: Datacenter
-    cluster: Cluster
-    cluster-name: pointcook
-    #cluster.open-cluster-management.io/clusterset: default
+    datacenter: IBMCloud
+    cluster: itzdev-wdc07
+    cluster-name: ce-apac
   applicationManager:
     enabled: true
   policyController:
@@ -32,5 +31,3 @@ spec:
     enabled: true
   iamPolicyController:
     enabled: true
-  #workManager:
-  #  enabled: true

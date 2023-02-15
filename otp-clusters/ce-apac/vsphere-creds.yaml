@@ -1,0 +1,9 @@
+---
+
+vcenter_fqdn:
+
+vcenter_password: 
+
+vcenter_username: 
+
+vcenter_validate_ssl:
