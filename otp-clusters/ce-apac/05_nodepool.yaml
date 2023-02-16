@@ -1,7 +1,7 @@
 apiVersion: hypershift.openshift.io/v1alpha1
 kind: NodePool
 metadata:
-  name: 'nodepool-ce-apac-sno-1'
+  name: 'nodepool-ce-apac-1'
   namespace: 'ce-apac'
 spec:
   clusterName: 'ce-apac'

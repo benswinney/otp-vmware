@@ -15,8 +15,8 @@ spec:
   tower_auth_secret: ansible
   job_template_name: AJ - Create vSphere Infrastructure
   extra_vars:
-    vcenter_credentials_secret_namespace: default
-    vcenter_credentials_secret_name: vsphere-techzone
+    vcenter_credentials_secret_namespace: ce-apac
+    vcenter_credentials_secret_name: vsphere
 
     infraenv_namespace: itzdev-na
     infraenv_name: itzdev-na
