@@ -26,6 +26,9 @@ spec:
   services:
   - service: APIServer
     servicePublishingStrategy:
+      nodePort:
+          address: api-server.ce-apac.na.cloud.techzone.ibm.com
+      type: NodePort
   - service: OAuthServer
     servicePublishingStrategy:
       type: Route
