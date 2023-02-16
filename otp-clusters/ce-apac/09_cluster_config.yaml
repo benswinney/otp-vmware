@@ -21,7 +21,7 @@ data:
 
   vsphere_datacenter: IBMCloud 
   vsphere_cluster: itzdev-wdc07
-  vsphere_datastore: datastore-wdc07-vm
+  vsphere_datastore: datastore-wdc07-vm02
   vsphere_iso_folder: ISO
   vsphere_vm_folder: rhacm-hub-spoke
 
