@@ -23,5 +23,5 @@ spec:
 
     cluster_configmap_namespace: ce-apac
     cluster_configmap_name: ce-apac-cluster-config
-  runner_image: "quay.io/benswinney-au/aap-rr"
+  runner_image: "quay.io/benswinneyau/aap-rr"
   runner_version: "latest"
