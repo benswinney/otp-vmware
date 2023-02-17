@@ -55,7 +55,8 @@
     state: patched
     kind: Agent
     name: "{{ agent_name }}"
-    namespace: "{{ cluster_configmap.namespace }}"
+    #namespace: "{{ cluster_configmap.namespace }}"
+    namespace: "{{ infraenv.name }}"
     api_version: agent-install.openshift.io/v1beta1
     definition:
       spec:
@@ -66,7 +67,8 @@
     state: patched
     kind: Agent
     name: "{{ agent_name }}"
-    namespace: "{{ cluster_configmap.namespace }}"
+    #namespace: "{{ cluster_configmap.namespace }}"
+    namespace: "{{ infraenv.name }}"
     api_version: agent-install.openshift.io/v1beta1
     definition:
       spec:
