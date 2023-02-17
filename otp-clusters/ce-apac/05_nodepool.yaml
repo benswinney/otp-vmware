@@ -14,6 +14,6 @@ spec:
     agent:
       agentLabelSelector:
         matchLabels: 
-        agentclusterinstalls.extensions.hive.openshift.io/location: North-America
+          agentclusterinstalls.extensions.hive.openshift.io/location: North-America
   release:
     image: quay.io/openshift-release-dev/ocp-release:4.12.2-multi
