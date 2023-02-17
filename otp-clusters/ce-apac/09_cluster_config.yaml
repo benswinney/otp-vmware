@@ -17,7 +17,7 @@ data:
   cluster_type: vSphere
 
   node_boot_timeout: '30'
-  node_count: '1'
+  node_count: '2'
 
   vsphere_datacenter: IBMCloud 
   vsphere_cluster: itzdev-wdc07
@@ -27,4 +27,4 @@ data:
 
   vsphere_network: itzdev-wdc07-private
 
-  cluster_nodes: '[{ "name": "itzdev-na-node-0", "type": "sno-node", "vm": { "cpu_cores": 16, "cpu_sockets": 1, "cpu_threads": 1, "memory": 32768, "disks": [{ "size": 120, "name": "boot" }]}, "network": { "interfaces": [{ "name": "ens192", "mac_address": "00:50:56:a7:32:d3", "dhcp": true }]}}]'
+  cluster_nodes: '[{ "name": "itzdev-na-node-0", "type": "application-node", "vm": { "cpu_cores": 16, "cpu_sockets": 1, "cpu_threads": 1, "memory": 32768, "disks": [{ "size": 120, "name": "boot" }]}, "network": { "interfaces": [{ "name": "ens192", "mac_address": "00:50:56:a7:32:d3", "dhcp": true }]}},{ "name": "itzdev-na-node-1", "type": "application-node", "vm": { "cpu_cores": 16, "cpu_sockets": 1, "cpu_threads": 1, "memory": 32768, "disks": [{ "size": 120, "name": "boot" }]}, "network": { "interfaces": [{ "name": "ens192", "mac_address": "00:50:56:a7:32:d4", "dhcp": true }]}}]'
