@@ -10,7 +10,7 @@
   retries: 3
   delay: 10
   until: infraenv_info.resources[0].status.isoDownloadURL != ""
-  ignore_errors: true
+  ignore_errors: false
 
 - name: Download Discovery ISO
   get_url:

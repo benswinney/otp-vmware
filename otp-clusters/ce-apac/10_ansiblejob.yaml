@@ -18,7 +18,7 @@ spec:
     vcenter_credentials_secret_namespace: ce-apac
     vcenter_credentials_secret_name: vsphere
 
-    infraenv_namespace: itzdev-na
+    infraenv_namespace: ce-apac
     infraenv_name: itzdev-na
 
     cluster_configmap_namespace: ce-apac
