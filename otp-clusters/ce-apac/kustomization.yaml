@@ -2,10 +2,10 @@ resources:
   - 01_namespace.yaml
   - 02_namespace.yaml
   - 03_role.yaml
- # - 04_hostedcluster.yaml
- # - 05_nodepool.yaml
- # - 06_klusterletaddonconfig.yaml
- # - 07_managedcluster.yaml
+  - 04_hostedcluster.yaml
+  - 05_nodepool.yaml
+  - 06_klusterletaddonconfig.yaml
+  - 07_managedcluster.yaml
   - 08_infraenv.yaml
   - 09_cluster_config.yaml
   - 10_ansiblejob.yaml
