@@ -2,7 +2,7 @@ apiVersion: hypershift.openshift.io/v1alpha1
 kind: NodePool
 metadata:
   name: 'nodepool-ce-apac-1'
-  namespace: 'ce-apac'
+  namespace: 'itzdev-na'
 spec:
   clusterName: 'ce-apac'
   replicas: 1
