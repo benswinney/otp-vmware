@@ -3,7 +3,7 @@ kind: ConfigMap
 apiVersion: v1 
 metadata:
   name: ce-apac-cluster-config
-  namespace: ce-apac
+  namespace: itzdev-na
   labels:
     name: ce-apac
     cloud: vSphere

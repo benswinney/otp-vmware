@@ -44,7 +44,7 @@
   retries: 10
   delay: 10
   until: upload_iso.changed|bool
-  ignore_errors: false
+  ignore_errors: true
   register: upload_iso
 
 - name: Delete local Discovery ISO
