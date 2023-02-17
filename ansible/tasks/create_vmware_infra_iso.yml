@@ -44,10 +44,12 @@
   retries: 10
   delay: 10
   until: upload_iso.changed|bool
-  ignore_errors: true
+  ignore_errors: false
   register: upload_iso
 
 - name: Delete local Discovery ISO
   file:
     path: "/tmp/discovery-iso-{{ cluster_configmap_info.resources[0].data.cluster_name }}.iso"
     state: absent
+
+
