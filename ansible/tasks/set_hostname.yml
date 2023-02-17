@@ -3,8 +3,8 @@
   kubernetes.core.k8s_info:
     api_version: agent-install.openshift.io/v1beta1
     kind: Agent
-    #namespace: "{{ cluster_configmap.namespace }}"
-    namespace: "{{ infraenv.name }}"
+    namespace: "{{ cluster_configmap.namespace }}"
+    #namespace: "{{ infraenv.name }}"
     label_selectors:
       - "infraenvs.agent-install.openshift.io = {{ infraenv.name }}"
   register: agent_crd_info
