@@ -28,6 +28,7 @@ spec:
     servicePublishingStrategy:
       nodePort:
           address: api.ce-apac.na.cloud.techzone.ibm.com
+          port: 31084
       type: NodePort
   - service: OAuthServer
     servicePublishingStrategy:
