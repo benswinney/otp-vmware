@@ -12,7 +12,6 @@ metadata:
     cluster: itzdev-wdc07
     cluster-name: ce-apac
 data:
-  infraenv_namespace: itzdev-na
   cluster_name: ce-apac
   cluster_provider: vsphere
   cluster_type: vSphere

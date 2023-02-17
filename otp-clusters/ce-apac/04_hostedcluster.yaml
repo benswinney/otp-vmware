@@ -19,7 +19,7 @@ spec:
   platform:
     type: Agent
     agent:
-      agentNamespace: 'itzdev-na'
+      agentNamespace: 'ce-apac'
   infraID: 'itzdev-na'
   dns:
     baseDomain: 'na.cloud.techzone.ibm.com'

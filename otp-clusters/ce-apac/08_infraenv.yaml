@@ -3,7 +3,7 @@ apiVersion: agent-install.openshift.io/v1beta1
 kind: InfraEnv
 metadata:
   name: itzdev-na
-  namespace: itzdev-na
+  namespace: ce-apac
   labels:
     name: itzdev-na
     cloud: vSphere
