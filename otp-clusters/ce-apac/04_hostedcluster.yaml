@@ -3,6 +3,9 @@ kind: HostedCluster
 metadata:
   name: 'ce-apac'
   namespace: 'ce-apac'
+  annotations:
+    cluster.open-cluster-management.io/hypershiftdeployment: local-cluster/ce-apac 
+    cluster.open-cluster-management.io/managedcluster-name: ce-apac
   labels:
 spec:
   release:
@@ -14,13 +17,13 @@ spec:
   networking:
     podCIDR: 10.132.0.0/14
     serviceCIDR: 172.31.0.0/16
-    machineCIDR: 
-    networkType: 
+    machineCIDR: 10.39.127.0/24 
+    networkType: OVNKubernetes
   platform:
     type: Agent
     agent:
       agentNamespace: 'ce-apac'
-  infraID: 'itzdev-na'
+  infraID: 'ce-apac'
   dns:
     baseDomain: 'na.cloud.techzone.ibm.com'
   services:
