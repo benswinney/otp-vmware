@@ -1,0 +1,62 @@
+apiVersion: hypershift.openshift.io/v1beta1
+kind: HostedControlPlane
+metadata:
+  annotations:
+    hypershift.openshift.io/cluster: ce-apac/ce-apac
+  name: ce-apac
+  namespace: ce-apac-ce-apac
+  labels:
+    cluster.x-k8s.io/cluster-name: ce-apac
+spec:
+  fips: false
+  dns:
+    baseDomain: na.cloud.techzone.ibm.com
+  controllerAvailabilityPolicy: SingleReplica
+  infraID: ce-apac
+  etcd:
+    managed:
+      storage:
+        persistentVolume:
+          size: 4Gi
+        type: PersistentVolume
+    managementType: Managed
+  infrastructureAvailabilityPolicy: SingleReplica
+  platform:
+    agent:
+      agentNamespace: ce-apac
+    type: None
+  releaseImage: 'quay.io/openshift-release-dev/ocp-release:4.11.27-multi'
+  networking:
+    clusterNetwork:
+      - cidr: 10.132.0.0/14
+    machineNetwork:
+      - cidr: 10.39.127.0/24
+    networkType: OVNKubernetes
+    serviceNetwork:
+      - cidr: 172.31.0.0/16
+  pullSecret:
+    name: pull-secret
+  issuerURL: 'https://kubernetes.default.svc'
+  sshKey:
+    name: ssh-key
+  autoscaling: {}
+  olmCatalogPlacement: management
+  services:
+    - service: APIServer
+      servicePublishingStrategy:
+        nodePort:
+          address: api.ce-apac.na.cloud.techzone.ibm.com
+          port: 31084
+        type: NodePort
+    - service: OAuthServer
+      servicePublishingStrategy:
+        type: Route
+    - service: OIDC
+      servicePublishingStrategy:
+        type: Route
+    - service: Konnectivity
+      servicePublishingStrategy:
+        type: Route
+    - service: Ignition
+      servicePublishingStrategy:
+        type: Route

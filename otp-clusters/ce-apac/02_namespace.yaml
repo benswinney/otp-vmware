@@ -12,4 +12,20 @@ metadata:
     datacenter: IBMCloud
     cluster: itzdev-wdc07
     cluster-name: ce-apac
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: ce-apac-ce-apac
+  annotations:
+    argocd.argoproj.io/sync-wave: "450"
+    helm.sh/hook-weight: "450"
+  labels:
+    hypershift.openshift.io/hosted-control-plane: 'true'
+    name: ce-apac-ce-apac
+    cloud: vSphere
+    vendor: OpenShift
+    datacenter: IBMCloud
+    cluster: itzdev-wdc07
+    cluster-name: ce-apac
     
