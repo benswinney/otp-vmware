@@ -6,6 +6,8 @@ metadata:
   annotations:
     cluster.open-cluster-management.io/hypershiftdeployment: local-cluster/ce-apac 
     cluster.open-cluster-management.io/managedcluster-name: ce-apac
+    argocd.argoproj.io/sync-wave: "470"
+    helm.sh/hook-weight: "470"
   labels:
 spec:
   release:

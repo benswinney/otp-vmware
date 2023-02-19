@@ -11,6 +11,9 @@ metadata:
     datacenter: IBMCloud
     cluster: itzdev-wdc07
     cluster-name: ce-apac
+  annotations:
+    argocd.argoproj.io/sync-wave: "455"
+    helm.sh/hook-weight: "455"
 data:
   cluster_name: ce-apac
   cluster_provider: vsphere

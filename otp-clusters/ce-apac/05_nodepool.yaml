@@ -3,6 +3,9 @@ kind: NodePool
 metadata:
   name: 'nodepool-ce-apac-1'
   namespace: 'ce-apac'
+  annotations:
+    argocd.argoproj.io/sync-wave: "475"
+    helm.sh/hook-weight: "475"
 spec:
   clusterName: 'ce-apac'
   replicas: 1

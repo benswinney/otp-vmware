@@ -11,6 +11,9 @@ metadata:
     datacenter: IBMCloud
     cluster: itzdev-wdc07
     cluster-name: ce-apac
+  annotations:
+    argocd.argoproj.io/sync-wave: "465"
+    helm.sh/hook-weight: "465"
 spec:
   tower_auth_secret: ansible
   job_template_name: AJ - Create vSphere Infrastructure
