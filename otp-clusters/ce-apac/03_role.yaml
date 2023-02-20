@@ -312,7 +312,7 @@ subjects:
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: capi-provider-role
+  name: cluster-admin
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
@@ -328,7 +328,7 @@ subjects:
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: capi-provider-role
+  name: cluster-admin
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
