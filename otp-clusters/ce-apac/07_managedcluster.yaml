@@ -2,7 +2,7 @@
 apiVersion: cluster.open-cluster-management.io/v1
 kind: ManagedCluster
 metadata:
-  name: 'ce-apac'
+  name: ce-apac-ce-apac
   annotations:
     #import.open-cluster-management.io/hosting-cluster-name: local-cluster 
     #import.open-cluster-management.io/klusterlet-deploy-mode: Hosted
@@ -10,7 +10,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "480"
     helm.sh/hook-weight: "480"
   labels:
-    name: 'ce-apac'
+    name: ce-apac
     cloud: BareMetal
     vendor: OpenShift
     datacenter: IBMCloud
