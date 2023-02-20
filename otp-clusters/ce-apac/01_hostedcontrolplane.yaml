@@ -2,6 +2,8 @@ apiVersion: hypershift.openshift.io/v1beta1
 kind: HostedControlPlane
 metadata:
   annotations:
+    argocd.argoproj.io/sync-wave: "461"
+    helm.sh/hook-weight: "461"
     hypershift.openshift.io/cluster: ce-apac/ce-apac
   name: ce-apac
   namespace: ce-apac-ce-apac
