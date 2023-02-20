@@ -3,7 +3,7 @@ apiVersion: agent.open-cluster-management.io/v1
 kind: KlusterletAddonConfig
 metadata:
   name: ce-apac
-  namespace: ce-apac-ce-apac
+  namespace: ce-apac
   labels:
     name: ce-apac
     cloud: vSphere
