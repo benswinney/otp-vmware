@@ -11,7 +11,7 @@ metadata:
     helm.sh/hook-weight: "480"
   labels:
     name: 'ce-apac'
-    cloud: BareMetal
+    cloud: vSphere
     vendor: OpenShift
     datacenter: IBMCloud
     cluster: itzdev-wdc07

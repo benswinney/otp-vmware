@@ -302,6 +302,9 @@ kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: openshift-gitops-otp-argocd-application-controller-rhacm
+  annotations:
+    argocd.argoproj.io/sync-wave: "455"
+    helm.sh/hook-weight: "455"
 subjects:
   - kind: ServiceAccount
     name: openshift-gitops-argocd-application-controller
@@ -314,6 +317,9 @@ roleRef:
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "455"
+    helm.sh/hook-weight: "455"
   name: openshift-gitops-otp-applicationset-controller-rhacm
 subjects:
   - kind: ServiceAccount
