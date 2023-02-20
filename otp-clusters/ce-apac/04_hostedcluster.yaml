@@ -1,15 +1,15 @@
 apiVersion: hypershift.openshift.io/v1alpha1
 kind: HostedCluster
 metadata:
-  name: 'ce-apac'
-  namespace: 'ce-apac'
+  name: ce-apac
+  namespace: ce-apac
   annotations:
     argocd.argoproj.io/sync-wave: "460"
     helm.sh/hook-weight: "460"
 spec:
   fips: false
   release:
-    image: quay.io/openshift-release-dev/ocp-release:4.11.27-multi
+    image: 'quay.io/openshift-release-dev/ocp-release:4.11.27-multi'
   controllerAvailabilityPolicy: SingleReplica
   pullSecret:
     name: pullsecret-cluster-ce-apac
@@ -29,8 +29,8 @@ spec:
   platform:
     type: Agent
     agent:
-      agentNamespace: 'ce-apac'
-  infraID: 'ce-apac'
+      agentNamespace: ce-apac
+  infraID: ce-apac
   etcd:
     managed:
       storage:
