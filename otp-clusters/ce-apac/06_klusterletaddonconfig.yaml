@@ -11,12 +11,15 @@ metadata:
     datacenter: IBMCloud
     cluster: itzdev-wdc07
     cluster-name: ce-apac
+  annotations:
+    argocd.argoproj.io/sync-wave: "485"
+    helm.sh/hook-weight: "485"
 spec:
   clusterName: ce-apac
   clusterNamespace: ce-apac
   clusterLabels:
     name: ce-apac
-    cloud: vSphere
+    cloud: BareMetal
     vendor: OpenShift
     datacenter: IBMCloud
     cluster: itzdev-wdc07
