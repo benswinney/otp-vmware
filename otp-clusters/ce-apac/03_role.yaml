@@ -232,10 +232,7 @@ rules:
       - agentclusterinstalls
       - nmstateconfigs
     verbs:
-      - create
-      - read
-      - update
-      - delete
+      - '*'
   - apiGroups:
       - clusterview.open-cluster-management.io
     resources: 
@@ -345,3 +342,4 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
   name: cluster-admin
+---
