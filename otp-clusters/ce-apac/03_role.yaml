@@ -312,7 +312,7 @@ subjects:
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: custom-argocd-cluster-argocd-application-controller-rhacm
+  name: capi-provider-role
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
@@ -328,4 +328,20 @@ subjects:
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: custom-argocd-cluster-argocd-application-controller-rhacm
+  name: capi-provider-role
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "455"
+    helm.sh/hook-weight: "455"
+  name: openshift-gitops-otp-hypershift-rhacm
+subjects:
+  - kind: ServiceAccount
+    name: operator
+    namespace: hypershift
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: capi-provider-role
