@@ -13,3 +13,9 @@ rules:
       - agent-install.openshift.io
     resources:
       - agents
+  - verbs:
+      - '*'
+    apiGroups:
+      - clusterview.open-cluster-management.io
+    resources:
+      - ManagedCluster
