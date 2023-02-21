@@ -4,8 +4,7 @@ kind: ManagedCluster
 metadata:
   name: ce-apac
   annotations:
-    cluster.open-cluster-management.io/hypershiftdeployment: ce-apac/ce-apac-ce-apac
-    cluster.open-cluster-management.io/provisioner: ce-apac-ce-apac.ce-apac.HypershiftDeployment.cluster.open-cluster-management.io
+    cluster.open-cluster-management.io/hypershiftdeployment: ce-apac/ce-apac
     import.open-cluster-management.io/hosting-cluster-name: local-cluster 
     import.open-cluster-management.io/klusterlet-deploy-mode: Hosted
     open-cluster-management/created-via: other
