@@ -12,9 +12,9 @@ spec:
     image: 'quay.io/openshift-release-dev/ocp-release:4.11.27-multi'
   controllerAvailabilityPolicy: SingleReplica
   pullSecret:
-    name: pullsecret-cluster-ce-apac
+    name: openshift-pull-secret
   sshKey:
-    name: sshkey-cluster-ce-apac
+    name: sshkey-cluster
   issuerURL: 'https://kubernetes.default.svc'
   autoscaling: {}
   olmCatalogPlacement: management

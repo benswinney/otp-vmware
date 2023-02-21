@@ -1,0 +1,33 @@
+---
+kind: ConfigMap 
+apiVersion: v1 
+metadata:
+  name: ce-apac-cluster-config
+  namespace: ce-apac
+  labels:
+    name: ce-apac
+    cloud: vSphere
+    vendor: OpenShift
+    datacenter: IBMCloud
+    cluster: itzdev-wdc07
+    cluster-name: ce-apac
+  annotations:
+    argocd.argoproj.io/sync-wave: "455"
+    helm.sh/hook-weight: "455"
+data:
+  cluster_name: ce-apac
+  cluster_provider: vsphere
+  cluster_type: vSphere
+
+  node_boot_timeout: '30'
+  node_count: '2'
+
+  vsphere_datacenter: IBMCloud 
+  vsphere_cluster: itzdev-wdc07
+  vsphere_datastore: datastore-wdc07-vm02
+  vsphere_iso_folder: ISO
+  vsphere_vm_folder: rhacm-hub-spoke
+
+  vsphere_network: itzdev-wdc07-private
+
+  cluster_nodes: '[{ "name": "itzdev-na-node-0", "type": "application-node", "vm": { "cpu_cores": 16, "cpu_sockets": 1, "cpu_threads": 1, "memory": 32768, "disks": [{ "size": 120, "name": "boot" }]}, "network": { "interfaces": [{ "name": "ens192", "mac_address": "00:50:56:a7:32:d3", "dhcp": true }]}},{ "name": "itzdev-na-node-1", "type": "application-node", "vm": { "cpu_cores": 16, "cpu_sockets": 1, "cpu_threads": 1, "memory": 32768, "disks": [{ "size": 120, "name": "boot" }]}, "network": { "interfaces": [{ "name": "ens192", "mac_address": "00:50:56:a7:32:d4", "dhcp": true }]}}]'

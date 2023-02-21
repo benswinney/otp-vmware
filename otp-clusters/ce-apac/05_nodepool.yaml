@@ -1,16 +1,21 @@
 apiVersion: hypershift.openshift.io/v1alpha1
 kind: NodePool
 metadata:
-  name: 'nodepool-ce-apac-1'
-  namespace: 'ce-apac'
+  name: nodepool-ce-apac-1
+  namespace: ce-apac
   annotations:
     argocd.argoproj.io/sync-wave: "475"
     helm.sh/hook-weight: "475"
 spec:
-  clusterName: 'ce-apac'
+  clusterName: ce-apac
   replicas: 1
   management:
     autoRepair: false
+    replace:
+      rollingUpdate:
+        maxSurge: 1
+        maxUnavailable: 0
+      strategy: RollingUpdate
     upgradeType: InPlace
   platform:
     type: Agent
@@ -19,4 +24,4 @@ spec:
         matchLabels: 
           agentclusterinstalls.extensions.hive.openshift.io/location: North-America
   release:
-    image: quay.io/openshift-release-dev/ocp-release:4.11.27-multi
+    image: 'quay.io/openshift-release-dev/ocp-release:4.11.27-multi'

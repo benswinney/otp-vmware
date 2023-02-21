@@ -1,5 +1,4 @@
 resources:
-  - 01_namespace.yaml
   - 02_namespace.yaml
   - 03_role.yaml
   #- 04_hostedcluster.yaml
