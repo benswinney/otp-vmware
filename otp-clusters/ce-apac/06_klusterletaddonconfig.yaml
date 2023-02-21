@@ -19,7 +19,7 @@ spec:
   clusterNamespace: ce-apac
   clusterLabels:
     name: ce-apac
-    cloud: BareMetal
+    cloud: HyperShift
     vendor: OpenShift
     datacenter: IBMCloud
     cluster: itzdev-wdc07
