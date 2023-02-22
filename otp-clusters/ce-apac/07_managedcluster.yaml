@@ -8,11 +8,11 @@ metadata:
     import.open-cluster-management.io/hosting-cluster-name: local-cluster 
     import.open-cluster-management.io/klusterlet-deploy-mode: Hosted
     open-cluster-management/created-via: other
-    argocd.argoproj.io/sync-wave: "480"
-    helm.sh/hook-weight: "480"
+    #argocd.argoproj.io/sync-wave: "480"
+    #helm.sh/hook-weight: "480"
   labels:
     name: ce-apac
-    cloud: Other
+    cloud: auto-detect
     vendor: OpenShift
 spec:
   hubAcceptsClient: true
