@@ -12,8 +12,8 @@ metadata:
     cluster: itzdev-wdc07
     cluster-name: ce-apac
   annotations:
-    argocd.argoproj.io/sync-wave: "465"
-    helm.sh/hook-weight: "465"
+    #argocd.argoproj.io/sync-wave: "465"
+    #helm.sh/hook-weight: "465"
 spec:
   tower_auth_secret: ansible
   job_template_name: Create HostedCluster vSphere Infrastructure

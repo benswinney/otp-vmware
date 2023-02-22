@@ -4,8 +4,8 @@ metadata:
   name: capi-provider-role
   namespace: ce-apac
   annotations:
-    argocd.argoproj.io/sync-wave: "451"
-    helm.sh/hook-weight: "451"
+    #argocd.argoproj.io/sync-wave: "451"
+    #helm.sh/hook-weight: "451"
 rules:
 - apiGroups:
   - agent-install.openshift.io

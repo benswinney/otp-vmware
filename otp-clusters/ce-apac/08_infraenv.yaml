@@ -14,8 +14,8 @@ metadata:
     agentclusterinstalls.extensions.hive.openshift.io/location: North-America
     networkType: dhcp
   annotations:
-    argocd.argoproj.io/sync-wave: "470"
-    helm.sh/hook-weight: "470"
+    #argocd.argoproj.io/sync-wave: "470"
+    #helm.sh/hook-weight: "470"
 spec:
   agentLabels:
     agentclusterinstalls.extensions.hive.openshift.io/location: North-America
