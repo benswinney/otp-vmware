@@ -53,6 +53,7 @@
     disk: "{{ disks }}"
     resource_pool: "{{ node_item.vm.resource_pool | default(omit) }}"
     hardware:
+      boot_firmware: "efi"
       memory_mb: "{{ node_item.vm.memory }}"
       num_cpu_cores_per_socket : "{{ node_item.vm.cpu_cores * node_item.vm.cpu_threads|int }}"
       num_cpus : "{{ (node_item.vm.cpu_sockets|int * node_item.vm.cpu_cores|int * node_item.vm.cpu_threads|int ) }}"
